@@ -38,22 +38,10 @@ from cyberresilient.services.compliance_service import load_controls, get_compli
 # ── Initialise ────────────────────────────────────────────────
 init_db()
 
-# Auto-detect tenant from subdomain (production) or session (dev)
-from cyberresilient.services.subdomain_service import auto_set_tenant_from_host
-auto_set_tenant_from_host()
-
 colors = get_theme_colors()
 GOLD = colors["accent"]
 cfg = get_config()
 profile = get_industry_profile()
-
-# ── Page config ───────────────────────────────────────────────
-st.set_page_config(
-    page_title=f"CyberResilient — {profile['label']} Edition",
-    page_icon="🛡️",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
 
 inject_platform_css()
 
