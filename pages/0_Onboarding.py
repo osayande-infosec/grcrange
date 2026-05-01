@@ -72,7 +72,7 @@ if st.session_state.get("tenant_id"):
         st.rerun()
     st.stop()
 
-page_header("Welcome to CyberResilient", "Set up your organisation to get started", icon="🛡️")
+page_header("Welcome to CyberResilient GRC Range", "Set up your organisation to get started", icon="🛡️")
 
 mode = st.radio(
     "What would you like to do?",

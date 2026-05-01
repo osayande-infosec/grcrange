@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import streamlit as st
 
 st.set_page_config(
-    page_title="CyberResilient GRC Platform",
+    page_title="CyberResilient GRC Range",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -51,9 +51,7 @@ with st.sidebar:
         f"""<div style="text-align:center; padding: 1rem 0 0.5rem 0;">
             <div style="font-size: 2.5rem; margin-bottom: 0.25rem;">🛡️</div>
             <div style="font-size: 1.2rem; font-weight: 700; color: #D4AF37;
-                        letter-spacing: -0.02em;">CyberResilient</div>
-            <div style="font-size: 0.75rem; color: #8B949E; text-transform: uppercase;
-                        letter-spacing: 0.1em; margin-top: 0.15rem;">GRC Platform</div>
+                        letter-spacing: -0.02em;">CyberResilient GRC Range</div>
         </div>""",
         unsafe_allow_html=True,
     )
