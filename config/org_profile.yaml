@@ -16,7 +16,7 @@ organization:
 # Controls which catalogues, risk categories, frameworks, and
 # report templates are loaded at startup.
 industry:
-  profile: "healthcare"          # financial | government | healthcare | enterprise
+  profile: "enterprise"          # financial | government | healthcare | enterprise
   sub_sector: "hospital"         # see sub_sectors below per profile
   data_classifications:          # active data types — drives PHI/PII/PCI tagging
     - "PHI"

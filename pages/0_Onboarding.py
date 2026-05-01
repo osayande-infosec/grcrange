@@ -84,15 +84,25 @@ if mode == "Start a new organisation":
     from cyberresilient.theme import section_header
     section_header("New Organisation Setup")
 
+    # Industry picker outside the form so it reacts to changes immediately
+    industry = st.selectbox(
+        "Industry *",
+        SUPPORTED_INDUSTRIES,
+        format_func=lambda x: INDUSTRY_PROFILES[x]["label"],
+        key="new_org_industry",
+    )
+    _profile_preview = INDUSTRY_PROFILES[industry]
+    st.info(
+        f"**{_profile_preview['icon']} {_profile_preview['label']} Edition** includes: "
+        f"{', '.join(_profile_preview['primary_frameworks']).upper()} compliance, "
+        f"{len(_profile_preview['risk_categories'])} risk categories, "
+        f"and {len(_profile_preview['report_templates'])} report templates."
+    )
+
     with st.form("onboarding"):
         c1, c2 = st.columns(2)
         with c1:
             org_name = st.text_input("Organisation Name *", placeholder="Acme Health Systems")
-            industry = st.selectbox(
-                "Industry *",
-                SUPPORTED_INDUSTRIES,
-                format_func=lambda x: INDUSTRY_PROFILES[x]["label"],
-            )
             country = st.selectbox(
                 "Country",
                 ["US", "CA", "GB", "AU", "NZ", "IE", "SG", "Other"],
@@ -100,15 +110,6 @@ if mode == "Start a new organisation":
         with c2:
             admin_name = st.text_input("Your Name *")
             admin_email = st.text_input("Your Email *", placeholder="admin@example.com")
-
-        # Show what comes with the selected industry
-        profile = INDUSTRY_PROFILES[industry]
-        st.info(
-            f"**{profile['icon']} {profile['label']} Edition** includes: "
-            f"{', '.join(profile['primary_frameworks']).upper()} compliance, "
-            f"{len(profile['risk_categories'])} risk categories, "
-            f"and {len(profile['report_templates'])} report templates."
-        )
 
         submitted = st.form_submit_button("🚀 Create Organisation (30-day free trial)", type="primary")
 
