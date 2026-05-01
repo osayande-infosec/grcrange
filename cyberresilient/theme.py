@@ -527,13 +527,9 @@ def section_header(title: str, description: str = ""):
     """Render a section divider with title."""
     desc_html = f"<span style='color: #8B949E; font-weight: 400; font-size: 0.9rem; margin-left: 0.75rem;'>{description}</span>" if description else ""
     st.markdown(
-        f"""<div style="
-            border-bottom: 1px solid #30363D; padding-bottom: 0.5rem;
-            margin: 1.5rem 0 1rem 0;
-        ">
-            <span style="color: #EAEAEA; font-size: 1.15rem; font-weight: 600;">{title}</span>
-            {desc_html}
-        </div>""",
+        f"<div style='border-bottom: 1px solid #30363D; padding-bottom: 0.5rem; margin: 1.5rem 0 1rem 0;'>"
+        f"<span style='color: #EAEAEA; font-size: 1.15rem; font-weight: 600;'>{title}</span>"
+        f"{desc_html}</div>",
         unsafe_allow_html=True,
     )
 
