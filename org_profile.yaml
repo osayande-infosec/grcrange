@@ -1,0 +1,104 @@
+# config/org_profile.yaml
+# Extended industry profile schema supporting Financial, Government, Healthcare,
+# and base Enterprise configurations.
+# Set industry: to activate sector-specific control catalogues,
+# risk categories, regulatory frameworks, and reporting templates.
+
+organization:
+  name: "Your Organization"
+  sector: "Healthcare"           # Financial | Government | Healthcare | Enterprise
+  country: "CA"                  # ISO 3166-1 alpha-2
+  region: "Ontario"              # Province / State (used for regional regs)
+  employee_count: 500
+  description: ""
+
+# Industry profile selection
+# Controls which catalogues, risk categories, frameworks, and
+# report templates are loaded at startup.
+industry:
+  profile: "healthcare"          # financial | government | healthcare | enterprise
+  sub_sector: "hospital"         # see sub_sectors below per profile
+  data_classifications:          # active data types — drives PHI/PII/PCI tagging
+    - "PHI"
+    - "PII"
+    - "Internal"
+    - "Public"
+
+# Sub-sector options:
+#   financial:   banking | insurance | investment | fintech | credit_union
+#   government:  federal | provincial | municipal | defence | crown_corp
+#   healthcare:  hospital | clinic | health_tech | pharma | insurer
+#   enterprise:  tech | manufacturing | retail | education | nonprofit
+
+branding:
+  app_title: "CyberResilient"
+  accent_color: "#D4AF37"
+  logo_path: ""                  # Optional path to logo file
+
+compliance:
+  # Active frameworks — controls for these are loaded and scored
+  frameworks:
+    - id: "nist_csf"
+      name: "NIST CSF 2.0"
+      enabled: true
+    - id: "iso27001"
+      name: "ISO 27001:2022"
+      enabled: true
+    - id: "hipaa"
+      name: "HIPAA Security Rule"
+      enabled: true              # Healthcare only
+    - id: "hitrust"
+      name: "HITRUST CSF"
+      enabled: false             # Enable for HITRUST certification track
+    - id: "pci_dss"
+      name: "PCI DSS v4.0"
+      enabled: false             # Financial only
+    - id: "sox_itgc"
+      name: "SOX IT General Controls"
+      enabled: false             # Financial only
+    - id: "nist_800_53"
+      name: "NIST SP 800-53 Rev 5"
+      enabled: false             # Government only
+    - id: "fedramp"
+      name: "FedRAMP Moderate"
+      enabled: false             # Government only
+    - id: "cmmc"
+      name: "CMMC Level 2"
+      enabled: false             # Defence contractors
+  custom_frameworks: []
+
+# Risk configuration
+risk:
+  appetite_threshold: 12         # Residual scores above this require sign-off
+  scoring_model: "matrix"        # matrix | fair (financial sector uses fair)
+  currency: "CAD"                # Used in FAIR quantitative scoring
+  review_intervals:              # Days between mandatory risk reviews
+    very_high: 90
+    high: 90
+    medium: 180
+    low: 365
+
+# Breach notification SLAs (hours) — sector-specific defaults
+breach_notification:
+  regulator_hours: 72            # PHIPA/GDPR default; HIPAA uses 60 days
+  individual_hours: 720          # 30 days default
+  regulator_name: "IPC"
+  regulator_contact: ""
+
+# Notification delivery
+notifications:
+  email_enabled: false
+  slack_enabled: false
+  digest_schedule: "08:00"       # UTC time for daily digest
+
+# Report templates — sector-specific templates loaded per industry profile
+reports:
+  executive_brief: true
+  risk_register: true
+  compliance_summary: true
+  audit_readiness: true
+  breach_notification: true      # Healthcare / Financial
+  hipaa_risk_analysis: false     # Healthcare only — set true for HIPAA profile
+  fedramp_ssp: false             # Government only
+  pci_saq: false                 # Financial only
+  fair_quantitative: false       # Financial only

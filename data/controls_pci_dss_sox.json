@@ -1,0 +1,179 @@
+{
+  "pci_dss": {
+    "framework": "PCI DSS v4.0",
+    "version": "4.0",
+    "applicability": ["financial"],
+    "requirements": {
+      "REQ-1": {
+        "name": "Install and Maintain Network Security Controls",
+        "controls": {
+          "1.1": {"name": "Network security control processes are defined and understood",          "status": "Not Implemented", "evidence_date": null},
+          "1.2": {"name": "Network security controls are configured and maintained",                "status": "Not Implemented", "evidence_date": null},
+          "1.3": {"name": "Network access to/from the CDE is restricted",                          "status": "Not Implemented", "evidence_date": null},
+          "1.4": {"name": "Network connections between trusted and untrusted networks are controlled","status": "Not Implemented","evidence_date": null},
+          "1.5": {"name": "Risks to the CDE from computing devices able to connect to untrusted networks","status": "Not Implemented","evidence_date": null}
+        }
+      },
+      "REQ-2": {
+        "name": "Apply Secure Configurations to All System Components",
+        "controls": {
+          "2.1": {"name": "Processes for secure configuration are defined and understood",          "status": "Not Implemented", "evidence_date": null},
+          "2.2": {"name": "System components are configured and managed securely",                  "status": "Not Implemented", "evidence_date": null},
+          "2.3": {"name": "Wireless environments are configured and managed securely",              "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-3": {
+        "name": "Protect Stored Account Data",
+        "controls": {
+          "3.1": {"name": "Processes for protecting stored account data are defined",               "status": "Not Implemented", "evidence_date": null},
+          "3.2": {"name": "Storage of account data is kept to a minimum",                          "status": "Not Implemented", "evidence_date": null},
+          "3.3": {"name": "Sensitive authentication data (SAD) is not retained after authorization","status": "Not Implemented","evidence_date": null},
+          "3.4": {"name": "Access to displays of full PAN and ability to copy PAN is restricted",  "status": "Not Implemented", "evidence_date": null},
+          "3.5": {"name": "Primary account number (PAN) is secured wherever it is stored",         "status": "Not Implemented", "evidence_date": null},
+          "3.6": {"name": "Cryptographic keys used to protect stored account data are secured",    "status": "Not Implemented", "evidence_date": null},
+          "3.7": {"name": "Where cryptography is used to protect stored account data, key management processes are defined","status": "Not Implemented","evidence_date": null}
+        }
+      },
+      "REQ-4": {
+        "name": "Protect Cardholder Data with Strong Cryptography During Transmission",
+        "controls": {
+          "4.1": {"name": "Processes for protecting cardholder data with cryptography are defined", "status": "Not Implemented", "evidence_date": null},
+          "4.2": {"name": "PAN is protected with strong cryptography during transmission",          "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-5": {
+        "name": "Protect All Systems and Networks from Malicious Software",
+        "controls": {
+          "5.1": {"name": "Processes to protect against malicious software are defined",            "status": "Not Implemented", "evidence_date": null},
+          "5.2": {"name": "Malicious software (malware) is prevented, or detected and addressed",  "status": "Not Implemented", "evidence_date": null},
+          "5.3": {"name": "Anti-malware mechanisms and processes are active, maintained, and monitored","status": "Not Implemented","evidence_date": null},
+          "5.4": {"name": "Anti-phishing mechanisms protect users against phishing attacks",        "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-6": {
+        "name": "Develop and Maintain Secure Systems and Software",
+        "controls": {
+          "6.1": {"name": "Processes for security of bespoke and custom software are defined",     "status": "Not Implemented", "evidence_date": null},
+          "6.2": {"name": "Bespoke and custom software are developed securely",                    "status": "Not Implemented", "evidence_date": null},
+          "6.3": {"name": "Security vulnerabilities are identified and addressed",                 "status": "Not Implemented", "evidence_date": null},
+          "6.4": {"name": "Public-facing web applications are protected against attacks",          "status": "Not Implemented", "evidence_date": null},
+          "6.5": {"name": "Changes to all system components are managed securely",                 "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-7": {
+        "name": "Restrict Access to System Components and Cardholder Data by Business Need to Know",
+        "controls": {
+          "7.1": {"name": "Processes to restrict access are defined and understood",               "status": "Not Implemented", "evidence_date": null},
+          "7.2": {"name": "Access to system components and data is appropriately defined and assigned","status": "Not Implemented","evidence_date": null},
+          "7.3": {"name": "Access to system components and data is managed via an access control system","status": "Not Implemented","evidence_date": null}
+        }
+      },
+      "REQ-8": {
+        "name": "Identify Users and Authenticate Access to System Components",
+        "controls": {
+          "8.1": {"name": "Processes for user identification and authentication are defined",      "status": "Not Implemented", "evidence_date": null},
+          "8.2": {"name": "User IDs and authentication credentials for all users are managed",    "status": "Not Implemented", "evidence_date": null},
+          "8.3": {"name": "User authentication before access to CDE is verified",                 "status": "Not Implemented", "evidence_date": null},
+          "8.4": {"name": "Multi-factor authentication is implemented",                           "status": "Not Implemented", "evidence_date": null},
+          "8.5": {"name": "Multi-factor authentication systems are configured securely",          "status": "Not Implemented", "evidence_date": null},
+          "8.6": {"name": "Use of application and system accounts and credentials is managed",    "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-9": {
+        "name": "Restrict Physical Access to Cardholder Data",
+        "controls": {
+          "9.1": {"name": "Processes to restrict physical access are defined and understood",     "status": "Not Implemented", "evidence_date": null},
+          "9.2": {"name": "Physical access controls manage entry into facilities and systems",    "status": "Not Implemented", "evidence_date": null},
+          "9.3": {"name": "Physical access for personnel and visitors is authorized and managed", "status": "Not Implemented", "evidence_date": null},
+          "9.4": {"name": "Media with cardholder data is securely stored, accessed, distributed, and destroyed","status": "Not Implemented","evidence_date": null},
+          "9.5": {"name": "Point of interaction (POI) devices are protected from tampering",     "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-10": {
+        "name": "Log and Monitor All Access to System Components and Cardholder Data",
+        "controls": {
+          "10.1": {"name": "Processes for logging and monitoring are defined and understood",     "status": "Not Implemented", "evidence_date": null},
+          "10.2": {"name": "Audit logs capture all individual user access to cardholder data",   "status": "Not Implemented", "evidence_date": null},
+          "10.3": {"name": "Audit logs are protected from destruction and unauthorized modifications","status": "Not Implemented","evidence_date": null},
+          "10.4": {"name": "Audit logs are reviewed to identify anomalies or suspicious activity","status": "Not Implemented", "evidence_date": null},
+          "10.5": {"name": "Audit log history is retained and available for analysis",           "status": "Not Implemented", "evidence_date": null},
+          "10.6": {"name": "Time-synchronization mechanisms support consistent time settings",   "status": "Not Implemented", "evidence_date": null},
+          "10.7": {"name": "Failures of critical security controls are detected and reported",   "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-11": {
+        "name": "Test Security of Systems and Networks Regularly",
+        "controls": {
+          "11.1": {"name": "Processes for security testing are defined and understood",          "status": "Not Implemented", "evidence_date": null},
+          "11.2": {"name": "Wireless access points are managed",                                 "status": "Not Implemented", "evidence_date": null},
+          "11.3": {"name": "External and internal vulnerabilities are regularly identified",     "status": "Not Implemented", "evidence_date": null},
+          "11.4": {"name": "External and internal penetration testing is regularly performed",   "status": "Not Implemented", "evidence_date": null},
+          "11.5": {"name": "Network intrusions and unexpected file changes are detected",        "status": "Not Implemented", "evidence_date": null},
+          "11.6": {"name": "Unauthorized changes on payment pages are detected and reported",    "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "REQ-12": {
+        "name": "Support Information Security with Organizational Policies and Programs",
+        "controls": {
+          "12.1": {"name": "A comprehensive information security policy is established",         "status": "Not Implemented", "evidence_date": null},
+          "12.2": {"name": "Acceptable use policies are implemented",                            "status": "Not Implemented", "evidence_date": null},
+          "12.3": {"name": "Risks to the CDE are formally identified, evaluated, and managed",  "status": "Not Implemented", "evidence_date": null},
+          "12.4": {"name": "PCI DSS compliance is managed",                                      "status": "Not Implemented", "evidence_date": null},
+          "12.5": {"name": "PCI DSS scope is documented and validated",                          "status": "Not Implemented", "evidence_date": null},
+          "12.6": {"name": "Security awareness education is ongoing",                            "status": "Not Implemented", "evidence_date": null},
+          "12.7": {"name": "Personnel are screened to reduce risks from insider threats",        "status": "Not Implemented", "evidence_date": null},
+          "12.8": {"name": "Risk to information assets associated with third-party service providers is managed","status": "Not Implemented","evidence_date": null},
+          "12.9": {"name": "Third-party service providers support their customers' PCI DSS compliance","status": "Not Implemented","evidence_date": null},
+          "12.10": {"name": "Suspected and confirmed security incidents are responded to immediately","status": "Not Implemented","evidence_date": null}
+        }
+      }
+    }
+  },
+
+  "sox_itgc": {
+    "framework": "SOX IT General Controls",
+    "version": "2024",
+    "applicability": ["financial"],
+    "domains": {
+      "ITGC-CC": {
+        "name": "Change Management",
+        "controls": {
+          "CC-1": {"name": "Change management policy and procedures are documented",              "status": "Not Implemented", "evidence_date": null},
+          "CC-2": {"name": "Changes are authorized prior to implementation",                     "status": "Not Implemented", "evidence_date": null},
+          "CC-3": {"name": "Changes are tested in a separate environment prior to production",   "status": "Not Implemented", "evidence_date": null},
+          "CC-4": {"name": "Emergency changes follow an expedited but controlled process",       "status": "Not Implemented", "evidence_date": null},
+          "CC-5": {"name": "Change records are retained and reviewed periodically",              "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "ITGC-LA": {
+        "name": "Logical Access",
+        "controls": {
+          "LA-1": {"name": "Access provisioning follows a formal request and approval process",  "status": "Not Implemented", "evidence_date": null},
+          "LA-2": {"name": "Privileged access is restricted and monitored",                     "status": "Not Implemented", "evidence_date": null},
+          "LA-3": {"name": "User access is reviewed on a periodic basis",                       "status": "Not Implemented", "evidence_date": null},
+          "LA-4": {"name": "Terminated user access is removed in a timely manner",              "status": "Not Implemented", "evidence_date": null},
+          "LA-5": {"name": "Password and authentication standards are enforced",                "status": "Not Implemented", "evidence_date": null},
+          "LA-6": {"name": "Segregation of duties is enforced for financially significant systems","status": "Not Implemented","evidence_date": null}
+        }
+      },
+      "ITGC-OPS": {
+        "name": "Computer Operations",
+        "controls": {
+          "OPS-1": {"name": "Batch job processing is monitored and exceptions investigated",    "status": "Not Implemented", "evidence_date": null},
+          "OPS-2": {"name": "Incident management procedures are documented and followed",       "status": "Not Implemented", "evidence_date": null},
+          "OPS-3": {"name": "Backup and recovery procedures are documented and tested",         "status": "Not Implemented", "evidence_date": null},
+          "OPS-4": {"name": "System availability and performance are monitored",                "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "ITGC-DR": {
+        "name": "Disaster Recovery and Business Continuity",
+        "controls": {
+          "DR-1": {"name": "A formal DR/BCP plan exists and is reviewed annually",              "status": "Not Implemented", "evidence_date": null},
+          "DR-2": {"name": "DR plan is tested at least annually",                               "status": "Not Implemented", "evidence_date": null},
+          "DR-3": {"name": "RTO and RPO targets are defined and documented",                    "status": "Not Implemented", "evidence_date": null},
+          "DR-4": {"name": "Critical system dependencies are identified in the DR plan",        "status": "Not Implemented", "evidence_date": null}
+        }
+      }
+    }
+  }
+}

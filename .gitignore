@@ -1,0 +1,44 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment & secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Copilot chat transcripts
+copilot-chat-summary-*.md
+copilot-chat-transcript-*.jsonl
+
+# Reports / generated outputs
+reports/
+instance/

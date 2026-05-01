@@ -1,0 +1,140 @@
+{
+  "nist_800_53": {
+    "framework": "NIST SP 800-53 Rev 5",
+    "version": "Rev 5",
+    "applicability": ["government", "fedramp", "fisma"],
+    "families": {
+      "AC": {
+        "name": "Access Control",
+        "description": "Limit system access to authorized users and transactions",
+        "controls": {
+          "AC-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-2":  {"name": "Account Management",             "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-3":  {"name": "Access Enforcement",             "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-4":  {"name": "Information Flow Enforcement",   "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "AC-5":  {"name": "Separation of Duties",           "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "AC-6":  {"name": "Least Privilege",                "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "AC-7":  {"name": "Unsuccessful Logon Attempts",    "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-8":  {"name": "System Use Notification",        "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-11": {"name": "Device Lock",                    "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "AC-12": {"name": "Session Termination",            "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "AC-14": {"name": "Permitted Actions Without Identification", "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-17": {"name": "Remote Access",                  "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-18": {"name": "Wireless Access",                "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-19": {"name": "Access Control for Mobile Devices","baseline": ["Low","Moderate","High"],"status": "Not Implemented", "evidence_date": null},
+          "AC-20": {"name": "Use of External Systems",        "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AC-22": {"name": "Publicly Accessible Content",   "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "AU": {
+        "name": "Audit and Accountability",
+        "description": "Create, protect, and retain system audit logs",
+        "controls": {
+          "AU-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AU-2":  {"name": "Event Logging",                   "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AU-3":  {"name": "Content of Audit Records",       "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AU-4":  {"name": "Audit Log Storage Capacity",     "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AU-5":  {"name": "Response to Audit Processing Failures","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "AU-6":  {"name": "Audit Record Review, Analysis, Reporting","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "AU-7":  {"name": "Audit Record Reduction and Report Generation","baseline": ["Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "AU-8":  {"name": "Time Stamps",                    "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AU-9":  {"name": "Protection of Audit Information","baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AU-11": {"name": "Audit Record Retention",         "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "AU-12": {"name": "Audit Record Generation",        "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "CA": {
+        "name": "Assessment, Authorization, Monitoring",
+        "description": "Continuously monitor and assess security controls",
+        "controls": {
+          "CA-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CA-2":  {"name": "Control Assessments",             "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CA-3":  {"name": "Information Exchange",            "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CA-5":  {"name": "Plan of Action and Milestones",  "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CA-6":  {"name": "Authorization",                   "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CA-7":  {"name": "Continuous Monitoring",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CA-9":  {"name": "Internal System Connections",    "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "CM": {
+        "name": "Configuration Management",
+        "description": "Establish and maintain baseline configurations",
+        "controls": {
+          "CM-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CM-2":  {"name": "Baseline Configuration",         "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CM-3":  {"name": "Configuration Change Control",   "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "CM-4":  {"name": "Impact Analyses",                "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "CM-5":  {"name": "Access Restrictions for Change", "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "CM-6":  {"name": "Configuration Settings",         "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CM-7":  {"name": "Least Functionality",            "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CM-8":  {"name": "System Component Inventory",     "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CM-10": {"name": "Software Usage Restrictions",    "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "CM-11": {"name": "User-Installed Software",        "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "IA": {
+        "name": "Identification and Authentication",
+        "description": "Identify and authenticate users, devices, and services",
+        "controls": {
+          "IA-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IA-2":  {"name": "Identification and Authentication (Org Users)","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "IA-3":  {"name": "Device Identification and Authentication","baseline": ["Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "IA-4":  {"name": "Identifier Management",          "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IA-5":  {"name": "Authenticator Management",       "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IA-6":  {"name": "Authentication Feedback",        "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IA-7":  {"name": "Cryptographic Module Authentication","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "IA-8":  {"name": "Identification and Authentication (Non-Org Users)","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "IA-11": {"name": "Re-Authentication",              "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "IA-12": {"name": "Identity Proofing",              "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "IR": {
+        "name": "Incident Response",
+        "description": "Establish incident response capability",
+        "controls": {
+          "IR-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IR-2":  {"name": "Incident Response Training",     "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IR-3":  {"name": "Incident Response Testing",      "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "IR-4":  {"name": "Incident Handling",              "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IR-5":  {"name": "Incident Monitoring",            "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IR-6":  {"name": "Incident Reporting",             "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IR-7":  {"name": "Incident Response Assistance",   "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "IR-8":  {"name": "Incident Response Plan",         "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null}
+        }
+      },
+      "SI": {
+        "name": "System and Information Integrity",
+        "description": "Identify, report, and correct information system flaws",
+        "controls": {
+          "SI-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SI-2":  {"name": "Flaw Remediation",               "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SI-3":  {"name": "Malicious Code Protection",      "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SI-4":  {"name": "System Monitoring",              "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SI-5":  {"name": "Security Alerts, Advisories, Directives","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "SI-7":  {"name": "Software, Firmware, Information Integrity","baseline": ["Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "SI-8":  {"name": "Spam Protection",                "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "SI-10": {"name": "Information Input Validation",   "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "SI-12": {"name": "Information Management and Retention","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null}
+        }
+      },
+      "SC": {
+        "name": "System and Communications Protection",
+        "description": "Protect communications and system boundaries",
+        "controls": {
+          "SC-1":  {"name": "Policy and Procedures",           "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SC-5":  {"name": "Denial of Service Protection",   "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SC-7":  {"name": "Boundary Protection",            "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SC-8":  {"name": "Transmission Confidentiality and Integrity","baseline": ["Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "SC-12": {"name": "Cryptographic Key Establishment and Management","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "SC-13": {"name": "Cryptographic Protection",       "baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SC-15": {"name": "Collaborative Computing Devices","baseline": ["Low","Moderate","High"], "status": "Not Implemented", "evidence_date": null},
+          "SC-17": {"name": "Public Key Infrastructure Certificates","baseline": ["Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "SC-18": {"name": "Mobile Code",                    "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "SC-19": {"name": "Voice over IP",                  "baseline": ["Moderate","High"],       "status": "Not Implemented", "evidence_date": null},
+          "SC-20": {"name": "Secure Name/Address Resolution Service","baseline": ["Low","Moderate","High"],"status": "Not Implemented","evidence_date": null},
+          "SC-28": {"name": "Protection of Information at Rest","baseline": ["Moderate","High"],     "status": "Not Implemented", "evidence_date": null}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+# CyberResilient — Industry Expansion Placement Guide
+# Phases 1 through 5
+# =====================================================
+
+# ── PHASE 1: Industry Profile Architecture ────────────────────────────────
+
+phase1/config/org_profile.yaml
+  → config/org_profile.yaml                                    (REPLACE)
+
+phase1/services/industry_service.py
+  → cyberresilient/services/industry_service.py                (NEW)
+
+phase1/data/controls_nist_800_53.json
+  → data/controls_nist_800_53.json                             (NEW)
+
+phase1/data/controls_hipaa.json
+  → data/controls_hipaa.json                                   (NEW)
+
+phase1/data/controls_pci_dss_sox.json
+  → data/controls_pci_dss_sox.json                             (NEW)
+
+
+# ── PHASE 2: Healthcare Edition ───────────────────────────────────────────
+
+phase2/services/phi_service.py
+  → cyberresilient/services/phi_service.py                     (NEW)
+
+phase2/pages/11_Healthcare_Compliance.py
+  → pages/11_Healthcare_Compliance.py                          (NEW PAGE)
+
+
+# ── PHASE 3: Financial Edition ────────────────────────────────────────────
+
+phase3/services/fair_service.py
+  → cyberresilient/services/fair_service.py                    (NEW)
+
+phase3/pages/12_Financial_Compliance.py
+  → pages/12_Financial_Compliance.py                           (NEW PAGE)
+
+
+# ── PHASE 4: Government Edition ───────────────────────────────────────────
+
+phase4/services/ato_service.py
+  → cyberresilient/services/ato_service.py                     (NEW)
+
+phase4/pages/13_Government_Compliance.py
+  → pages/13_Government_Compliance.py                          (NEW PAGE)
+
+
+# ── PHASE 5: Multi-Tenant + Onboarding ───────────────────────────────────
+
+phase5/services/tenant_service.py
+  → cyberresilient/services/tenant_service.py                  (NEW)
+
+phase5/pages/0_Onboarding.py
+  → pages/0_Onboarding.py                                      (NEW PAGE — loads first)
+
+phase5/db_models_all_phases.py
+  → Merge AssetRow, BreachNotificationRow, ATOSystemRow,
+    POAMRow, TenantRow, TenantConfigRow
+    into cyberresilient/models/db_models.py
+
+phase5/migration_0005_phases1_to_5.py
+  → alembic/versions/0005_phases1_to_5_industry_expansion.py
+
+
+# ── RUN AFTER ALL FILES ARE IN PLACE ─────────────────────────────────────
+
+alembic upgrade head
+cyberresilient init --seed
+
+
+# ── ACTIVATE AN INDUSTRY PROFILE ─────────────────────────────────────────
+# Edit config/org_profile.yaml:
+
+# For Healthcare:
+#   industry.profile: "healthcare"
+#   Enable hipaa: true under compliance.frameworks
+
+# For Financial:
+#   industry.profile: "financial"
+#   Enable pci_dss: true, sox_itgc: true
+#   risk.scoring_model: "fair"
+
+# For Government:
+#   industry.profile: "government"
+#   Enable nist_800_53: true, fedramp: true
+
+# For Enterprise (default):
+#   industry.profile: "enterprise"
+
+
+# ── WHAT EACH PHASE DELIVERS ──────────────────────────────────────────────
+
+# Phase 1 — Industry Profile Architecture
+#   Config-driven sector selection, 3 new control catalogues
+#   (NIST 800-53 full, HIPAA, PCI DSS + SOX ITGC), industry_service router
+
+# Phase 2 — Healthcare Edition
+#   PHI asset classification with risk multipliers, HIPAA breach
+#   notification workflow with HHS/individual/media deadline tracking,
+#   HIPAA Security Rule compliance tracker (all 3 safeguards)
+
+# Phase 3 — Financial Edition
+#   FAIR quantitative risk calculator (ALE in $), PCI DSS v4.0 full
+#   12-requirement tracker, SOX ITGC 4-domain tracker, pre-built
+#   financial and healthcare risk scenarios
+
+# Phase 4 — Government Edition
+#   NIST SP 800-53 Rev 5 full catalogue (8 families, 100+ controls),
+#   FedRAMP/FISMA ATO lifecycle (categorization → active ATO),
+#   POA&M creation and tracking with overdue detection
+
+# Phase 5 — Multi-Tenant + Commercial Launch
+#   Tenant provisioning with industry profile seeding, 30-day trial
+#   management, tenant context injection via session state,
+#   self-service onboarding page (loads as page 0)
+
+
+# ── WHAT STILL NEEDS BUILDING FOR FULL COMMERCIAL LAUNCH ─────────────────
+
+# 1. Billing integration (Stripe) — plan upgrades, usage limits
+# 2. Row-level security in queries — prefix all queries with tenant_id filter
+#    (see tenant_service.get_current_tenant_id())
+# 3. Email verification on onboarding
+# 4. Subdomain routing — tenant.cyberresilient.io per org
+# 5. Admin super-dashboard — cross-tenant health monitoring
+# 6. HITRUST CSF catalogue (healthcare enterprise tier)
+# 7. DORA (EU) catalogue (financial EU clients)
+# 8. CMMC Level 2 catalogue (defence contractors)

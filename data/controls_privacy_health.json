@@ -1,0 +1,82 @@
+{
+  "gdpr": {
+    "framework": "GDPR",
+    "version": "EU 2016/679",
+    "domains": {
+      "GDPR-ART5": {
+        "name": "Principles Relating to Processing",
+        "controls": {
+          "GDPR-5-1A": {"name": "Lawfulness, fairness, transparency", "status": "Partial"},
+          "GDPR-5-1B": {"name": "Purpose limitation", "status": "Partial"},
+          "GDPR-5-1C": {"name": "Data minimization", "status": "Partial"},
+          "GDPR-5-1F": {"name": "Integrity and confidentiality", "status": "Implemented"}
+        }
+      },
+      "GDPR-ART30": {
+        "name": "Records of Processing Activities",
+        "controls": {
+          "GDPR-30-1": {"name": "Controller ROPA maintained", "status": "Not Implemented"},
+          "GDPR-30-2": {"name": "Processor ROPA maintained", "status": "Not Implemented"}
+        }
+      },
+      "GDPR-ART32": {
+        "name": "Security of Processing",
+        "controls": {
+          "GDPR-32-1A": {"name": "Pseudonymization and encryption", "status": "Partial"},
+          "GDPR-32-1B": {"name": "Confidentiality, integrity, resilience", "status": "Implemented"},
+          "GDPR-32-1C": {"name": "Restore availability in timely manner", "status": "Partial"},
+          "GDPR-32-1D": {"name": "Regular testing and assessment", "status": "Partial"}
+        }
+      },
+      "GDPR-ART33-34": {
+        "name": "Personal Data Breach Notification",
+        "controls": {
+          "GDPR-33": {"name": "Supervisory authority notified within 72 hours", "status": "Partial"},
+          "GDPR-34": {"name": "Data subjects notified when high risk", "status": "Partial"}
+        }
+      }
+    }
+  },
+  "pipeda": {
+    "framework": "PIPEDA",
+    "version": "Canada",
+    "domains": {
+      "PIPEDA-1": {
+        "name": "Accountability",
+        "controls": {
+          "PIPEDA-1-1": {"name": "Privacy officer appointed", "status": "Implemented"},
+          "PIPEDA-1-2": {"name": "Policies and procedures documented", "status": "Partial"}
+        }
+      },
+      "PIPEDA-3": {
+        "name": "Consent",
+        "controls": {
+          "PIPEDA-3-1": {"name": "Meaningful consent process", "status": "Partial"},
+          "PIPEDA-3-2": {"name": "Consent withdrawal supported", "status": "Not Implemented"}
+        }
+      },
+      "PIPEDA-4": {
+        "name": "Limiting Collection, Use, Disclosure, Retention",
+        "controls": {
+          "PIPEDA-4-1": {"name": "Collection limited to necessary information", "status": "Partial"},
+          "PIPEDA-4-2": {"name": "Retention schedule defined", "status": "Not Implemented"}
+        }
+      },
+      "PIPEDA-7": {
+        "name": "Safeguards",
+        "controls": {
+          "PIPEDA-7-1": {"name": "Administrative safeguards", "status": "Implemented"},
+          "PIPEDA-7-2": {"name": "Technical safeguards", "status": "Implemented"},
+          "PIPEDA-7-3": {"name": "Physical safeguards", "status": "Partial"}
+        }
+      },
+      "PIPEDA-BREACH": {
+        "name": "Breach of Security Safeguards",
+        "controls": {
+          "PIPEDA-B-1": {"name": "Material breach reporting process", "status": "Partial"},
+          "PIPEDA-B-2": {"name": "Breach records maintained for 24 months", "status": "Not Implemented"}
+        }
+      }
+    }
+  }
+}

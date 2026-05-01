@@ -1,0 +1,174 @@
+{
+  "hipaa": {
+    "framework": "HIPAA Security Rule",
+    "version": "45 CFR Part 164",
+    "applicability": ["healthcare"],
+    "safeguards": {
+      "Administrative": {
+        "description": "Policies, procedures, and processes to manage the selection, development, implementation, and maintenance of security measures",
+        "standards": {
+          "164.308(a)(1)": {
+            "name": "Security Management Process",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(1)(ii)(A)": {"name": "Risk Analysis",              "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(1)(ii)(B)": {"name": "Risk Management",            "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(1)(ii)(C)": {"name": "Sanction Policy",            "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(1)(ii)(D)": {"name": "Information System Activity Review","type": "Required","status": "Not Implemented","evidence_date": null}
+            }
+          },
+          "164.308(a)(2)": {
+            "name": "Assigned Security Responsibility",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(2)": {"name": "Security Official Designation",     "type": "Required",    "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.308(a)(3)": {
+            "name": "Workforce Security",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(3)(ii)(A)": {"name": "Authorization and Supervision","type": "Addressable","status": "Not Implemented","evidence_date": null},
+              "164.308(a)(3)(ii)(B)": {"name": "Workforce Clearance Procedure","type": "Addressable","status": "Not Implemented","evidence_date": null},
+              "164.308(a)(3)(ii)(C)": {"name": "Termination Procedures",     "type": "Addressable", "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.308(a)(4)": {
+            "name": "Information Access Management",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(4)(ii)(A)": {"name": "Isolating Healthcare Clearinghouse Functions","type": "Required","status": "Not Implemented","evidence_date": null},
+              "164.308(a)(4)(ii)(B)": {"name": "Access Authorization",       "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(4)(ii)(C)": {"name": "Access Establishment and Modification","type": "Addressable","status": "Not Implemented","evidence_date": null}
+            }
+          },
+          "164.308(a)(5)": {
+            "name": "Security Awareness and Training",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(5)(ii)(A)": {"name": "Security Reminders",         "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(5)(ii)(B)": {"name": "Protection from Malicious Software","type": "Addressable","status": "Not Implemented","evidence_date": null},
+              "164.308(a)(5)(ii)(C)": {"name": "Log-in Monitoring",          "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(5)(ii)(D)": {"name": "Password Management",        "type": "Addressable", "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.308(a)(6)": {
+            "name": "Security Incident Procedures",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(6)(ii)": {"name": "Response and Reporting",        "type": "Required",    "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.308(a)(7)": {
+            "name": "Contingency Plan",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(7)(ii)(A)": {"name": "Data Backup Plan",           "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(7)(ii)(B)": {"name": "Disaster Recovery Plan",     "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(7)(ii)(C)": {"name": "Emergency Mode Operation Plan","type": "Required",  "status": "Not Implemented", "evidence_date": null},
+              "164.308(a)(7)(ii)(D)": {"name": "Testing and Revision Procedures","type": "Addressable","status": "Not Implemented","evidence_date": null},
+              "164.308(a)(7)(ii)(E)": {"name": "Applications and Data Criticality Analysis","type": "Addressable","status": "Not Implemented","evidence_date": null}
+            }
+          },
+          "164.308(a)(8)": {
+            "name": "Evaluation",
+            "type": "Required",
+            "implementations": {
+              "164.308(a)(8)": {"name": "Periodic Technical and Non-Technical Evaluation","type": "Required","status": "Not Implemented","evidence_date": null}
+            }
+          },
+          "164.308(b)(1)": {
+            "name": "Business Associate Contracts",
+            "type": "Required",
+            "implementations": {
+              "164.308(b)(1)": {"name": "Written Contract or Other Arrangement","type": "Required",  "status": "Not Implemented", "evidence_date": null}
+            }
+          }
+        }
+      },
+      "Physical": {
+        "description": "Physical measures to protect ePHI systems, equipment, and facilities",
+        "standards": {
+          "164.310(a)(1)": {
+            "name": "Facility Access Controls",
+            "type": "Required",
+            "implementations": {
+              "164.310(a)(2)(i)":   {"name": "Contingency Operations",       "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.310(a)(2)(ii)":  {"name": "Facility Security Plan",       "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.310(a)(2)(iii)": {"name": "Access Control and Validation Procedures","type": "Addressable","status": "Not Implemented","evidence_date": null},
+              "164.310(a)(2)(iv)":  {"name": "Maintenance Records",          "type": "Addressable", "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.310(b)": {
+            "name": "Workstation Use",
+            "type": "Required",
+            "implementations": {
+              "164.310(b)": {"name": "Workstation Use Policy",               "type": "Required",    "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.310(c)": {
+            "name": "Workstation Security",
+            "type": "Required",
+            "implementations": {
+              "164.310(c)": {"name": "Physical Safeguards for Workstations", "type": "Required",    "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.310(d)(1)": {
+            "name": "Device and Media Controls",
+            "type": "Required",
+            "implementations": {
+              "164.310(d)(2)(i)":  {"name": "Disposal",                      "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.310(d)(2)(ii)": {"name": "Media Re-use",                  "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.310(d)(2)(iii)":{"name": "Accountability",                "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.310(d)(2)(iv)": {"name": "Data Backup and Storage",       "type": "Addressable", "status": "Not Implemented", "evidence_date": null}
+            }
+          }
+        }
+      },
+      "Technical": {
+        "description": "Technical policies and procedures for electronic information systems",
+        "standards": {
+          "164.312(a)(1)": {
+            "name": "Access Control",
+            "type": "Required",
+            "implementations": {
+              "164.312(a)(2)(i)":   {"name": "Unique User Identification",   "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.312(a)(2)(ii)":  {"name": "Emergency Access Procedure",   "type": "Required",    "status": "Not Implemented", "evidence_date": null},
+              "164.312(a)(2)(iii)": {"name": "Automatic Logoff",             "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.312(a)(2)(iv)":  {"name": "Encryption and Decryption",    "type": "Addressable", "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.312(b)": {
+            "name": "Audit Controls",
+            "type": "Required",
+            "implementations": {
+              "164.312(b)": {"name": "Hardware, Software, Procedural Audit Mechanisms","type": "Required","status": "Not Implemented","evidence_date": null}
+            }
+          },
+          "164.312(c)(1)": {
+            "name": "Integrity",
+            "type": "Required",
+            "implementations": {
+              "164.312(c)(2)": {"name": "Mechanism to Authenticate ePHI",    "type": "Addressable", "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.312(d)": {
+            "name": "Person or Entity Authentication",
+            "type": "Required",
+            "implementations": {
+              "164.312(d)": {"name": "Verify Identity Before Granting Access","type": "Required",   "status": "Not Implemented", "evidence_date": null}
+            }
+          },
+          "164.312(e)(1)": {
+            "name": "Transmission Security",
+            "type": "Required",
+            "implementations": {
+              "164.312(e)(2)(i)":  {"name": "Integrity Controls",            "type": "Addressable", "status": "Not Implemented", "evidence_date": null},
+              "164.312(e)(2)(ii)": {"name": "Encryption",                    "type": "Addressable", "status": "Not Implemented", "evidence_date": null}
+            }
+          }
+        }
+      }
+    }
+  }
+}
