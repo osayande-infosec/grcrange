@@ -27,7 +27,7 @@ import uuid
 from datetime import date, datetime, timedelta, timezone
 from typing import Any, Optional
 
-SUPPORTED_INDUSTRIES = ["healthcare", "financial", "government", "enterprise"]
+SUPPORTED_INDUSTRIES = ["enterprise", "healthcare", "financial", "government"]
 
 PLAN_TIERS = ["trial", "starter", "professional", "enterprise"]
 

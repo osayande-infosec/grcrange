@@ -64,11 +64,19 @@ with st.sidebar:
     st.markdown("---")
 
 # ── Main dashboard ────────────────────────────────────────────
-page_header(
-    f"CyberResilient — {profile['icon']} {profile['label']} Edition",
-    "Governance, Risk & Compliance Platform",
-    icon="🛡️",
-)
+_tenant_id = st.session_state.get("tenant_id")
+if _tenant_id:
+    page_header(
+        f"CyberResilient — {profile['icon']} {profile['label']} Edition",
+        "Governance, Risk & Compliance Platform",
+        icon="🛡️",
+    )
+else:
+    page_header(
+        "CyberResilient GRC Range",
+        "Governance, Risk & Compliance Platform",
+        icon="🛡️",
+    )
 
 # ── Compliance Scores (top KPIs) ─────────────────────────────
 controls = load_controls()
