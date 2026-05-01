@@ -13,6 +13,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import streamlit as st
 
+st.set_page_config(
+    page_title="CyberResilient GRC Platform",
+    page_icon="🛡️",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 from cyberresilient.config import get_config
 from cyberresilient.database import init_db
 from cyberresilient.theme import (
