@@ -106,6 +106,8 @@ footer { visibility: hidden; }
 section[data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0D1117 0%, #161B22 50%, #0D1117 100%);
     border-right: 1px solid #30363D;
+    min-width: 18rem !important;
+    width: 18rem !important;
 }
 
 section[data-testid="stSidebar"] > div {

@@ -207,7 +207,7 @@ if top_gaps:
             f"<div style='background:{col}11;border-left:4px solid {col};"
             f"border-radius:4px;padding:8px 14px;margin-bottom:6px'>"
             f"<span style='color:{col};font-weight:700;font-size:12px'>{sev.upper()}</span>"
-            f" &nbsp;|&nbsp; <strong>[{gap['framework']}]</strong> {gap['control']}"
+            f" &nbsp;|&nbsp; <strong>[{gap['framework']}]</strong> {gap['name']}"
             f" &nbsp; <span style='color:#aaa;font-size:12px'>{gap['score']}%</span>"
             f"</div>",
             unsafe_allow_html=True,
