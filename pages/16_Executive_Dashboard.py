@@ -32,8 +32,9 @@ from cyberresilient.services.compliance_service import (
 )
 from cyberresilient.services.report_service import generate_compliance_board_report
 from cyberresilient.services.risk_service import get_risk_summary, load_risks
-from cyberresilient.theme import get_theme_colors
+from cyberresilient.theme import get_theme_colors, inject_platform_css
 
+inject_platform_css()
 cfg = get_config()
 colors = get_theme_colors()
 GOLD = colors["accent"]

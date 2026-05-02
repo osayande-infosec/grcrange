@@ -25,8 +25,9 @@ from cyberresilient.services.evidence_service import (
     list_evidence,
     save_evidence,
 )
-from cyberresilient.theme import get_theme_colors
+from cyberresilient.theme import get_theme_colors, inject_platform_css
 
+inject_platform_css()
 cfg = get_config()
 colors = get_theme_colors()
 GOLD = colors["accent"]

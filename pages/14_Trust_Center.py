@@ -25,8 +25,9 @@ from cyberresilient.services.compliance_service import (
     load_policies,
     load_soc2_controls,
 )
-from cyberresilient.theme import get_theme_colors
+from cyberresilient.theme import get_theme_colors, inject_platform_css
 
+inject_platform_css()
 cfg = get_config()
 colors = get_theme_colors()
 GOLD = colors["accent"]
