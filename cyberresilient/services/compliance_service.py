@@ -550,12 +550,13 @@ def calc_fedramp_scores(data: dict) -> dict:
 
 
 def load_pci_controls() -> dict:
-    with open(DATA_DIR / "controls_pci_dss.json", encoding="utf-8") as f:
+    with open(DATA_DIR / "controls_pci_dss_extended.json", encoding="utf-8") as f:
         return json.load(f)
 
 
 def calc_pci_scores(data: dict) -> dict:
-    requirements = data["pci_dss"]["requirements"]
+    # supports both key names
+    requirements = data.get("pci_dss_ext", data.get("pci_dss", {})).get("requirements", [])
     results = []
     total_controls = total_implemented = total_partial = stale_reqs = 0
     for req in requirements:

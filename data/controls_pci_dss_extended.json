@@ -1,5 +1,5 @@
 {
-  "pci_dss": {
+  "pci_dss_ext": {
     "framework": "PCI DSS v4.0",
     "version": "v4.0 (2022)",
     "requirements": [

@@ -38,8 +38,6 @@ cfg = get_config()
 colors = get_theme_colors()
 GOLD = colors["accent"]
 
-# ── Page config ──────────────────────────────────────────────
-st.set_page_config(page_title="Executive Dashboard", layout="wide")
 st.markdown("# 🏛️ Executive Security Dashboard")
 st.markdown(
     f"**{cfg.organization.name}** | Board & C-Suite View | {datetime.date.today().strftime('%B %d, %Y')}"

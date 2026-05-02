@@ -31,9 +31,6 @@ cfg = get_config()
 colors = get_theme_colors()
 GOLD = colors["accent"]
 
-# ── Page config ──────────────────────────────────────────────
-st.set_page_config(page_title="Trust Center", page_icon="🔐", layout="wide")
-
 # ── Header ───────────────────────────────────────────────────
 st.markdown(
     f"""
