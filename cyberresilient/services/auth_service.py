@@ -84,3 +84,14 @@ def has_permission(permission: str) -> bool:
         if permission in _ROLE_PERMISSIONS.get(role, []):
             return True
     return False
+
+
+def is_learning_mode() -> bool:
+    """Check if learning mode is currently active."""
+    return st.session_state.get("learning_mode", False)
+
+
+def learning_callout(title: str, content: str, icon: str = "💡") -> None:
+    """Show an educational callout if learning mode is on."""
+    if is_learning_mode():
+        st.info(f"{icon} **{title}**\n\n{content}")
