@@ -49,16 +49,19 @@ second = three_lines["second_line"]
 fig.add_trace(go.Indicator(
     mode="gauge+number",
     value=first["score"],
-    title={"text": "1st Line<br>Operational Security"},
+    title={"text": "1st Line<br>Operational Security", "font": {"color": "#EAEAEA", "size": 13}},
+    number={"suffix": "%", "font": {"color": "#58A6FF", "size": 28}},
     gauge={
-        "axis": {"range": [0, 100]},
-        "bar": {"color": "#1f77b4"},
+        "axis": {"range": [0, 100], "tickfont": {"color": "#8B949E", "size": 9}},
+        "bar": {"color": "#58A6FF"},
+        "bgcolor": "#1A1A2E",
         "steps": [
-            {"range": [0, 40], "color": "#ffcccc"},
-            {"range": [40, 60], "color": "#ffe0b2"},
-            {"range": [60, 80], "color": "#fff9c4"},
-            {"range": [80, 100], "color": "#c8e6c9"},
+            {"range": [0, 40], "color": "#2a1010"},
+            {"range": [40, 60], "color": "#2a2010"},
+            {"range": [60, 80], "color": "#1a2a10"},
+            {"range": [80, 100], "color": "#102a10"},
         ],
+        "threshold": {"line": {"color": "#D4AF37", "width": 2}, "value": 80},
     },
     domain={"row": 0, "column": 0},
 ))
@@ -66,22 +69,27 @@ fig.add_trace(go.Indicator(
 fig.add_trace(go.Indicator(
     mode="gauge+number",
     value=second["score"],
-    title={"text": "2nd Line<br>Compliance & Risk"},
+    title={"text": "2nd Line<br>Compliance & Risk", "font": {"color": "#EAEAEA", "size": 13}},
+    number={"suffix": "%", "font": {"color": "#3FB950", "size": 28}},
     gauge={
-        "axis": {"range": [0, 100]},
-        "bar": {"color": "#ff7f0e"},
+        "axis": {"range": [0, 100], "tickfont": {"color": "#8B949E", "size": 9}},
+        "bar": {"color": "#3FB950"},
+        "bgcolor": "#1A1A2E",
         "steps": [
-            {"range": [0, 40], "color": "#ffcccc"},
-            {"range": [40, 60], "color": "#ffe0b2"},
-            {"range": [60, 80], "color": "#fff9c4"},
-            {"range": [80, 100], "color": "#c8e6c9"},
+            {"range": [0, 40], "color": "#2a1010"},
+            {"range": [40, 60], "color": "#2a2010"},
+            {"range": [60, 80], "color": "#1a2a10"},
+            {"range": [80, 100], "color": "#102a10"},
         ],
+        "threshold": {"line": {"color": "#D4AF37", "width": 2}, "value": 80},
     },
     domain={"row": 0, "column": 1},
 ))
 
 fig.update_layout(
     grid={"rows": 1, "columns": 2, "pattern": "independent"},
+    paper_bgcolor="rgba(0,0,0,0)",
+    font_color="#EAEAEA",
     height=300,
     margin=dict(l=30, r=30, t=60, b=30),
 )

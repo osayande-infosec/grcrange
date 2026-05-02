@@ -119,7 +119,7 @@ fig_radar.add_trace(
         theta=fw_labels_r,
         fill="toself",
         line_color=GOLD,
-        fillcolor=f"{GOLD}33",
+        fillcolor="rgba(212, 175, 55, 0.2)",
         name="Compliance Score",
     )
 )
