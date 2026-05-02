@@ -118,8 +118,23 @@ def get_compliance_score(framework_id: str) -> dict:
     auto_implemented = 0
 
     # Handle different catalogue structures
-    for section_key in ["families", "safeguards", "requirements", "domains"]:
-        sections = fw_data.get(section_key, {})
+    for section_key in ["families", "safeguards", "requirements", "domains",
+                        "categories", "control_families"]:
+        raw_sections = fw_data.get(section_key)
+        if not raw_sections:
+            continue
+
+        # Normalise: new JSON files store sections as lists with pre-aggregated
+        # totals/implemented counts; legacy files use dicts of control objects.
+        if isinstance(raw_sections, list):
+            for section in raw_sections:
+                t = section.get("total", 0)
+                imp = section.get("implemented", 0)
+                total += t
+                implemented += imp
+            continue  # pre-aggregated — no deeper controls to inspect
+
+        sections = raw_sections  # dict-based legacy format
         for section_id, section in sections.items():
             # NIST 800-53 style: families → controls
             if "controls" in section:
