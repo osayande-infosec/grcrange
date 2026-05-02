@@ -131,7 +131,7 @@ section[data-testid="stSidebar"] [data-testid="stSidebarNav"] {
 }
 
 section[data-testid="stSidebar"] [data-testid="stSidebarNav"]::before {
-    content: "Executive Command Rail";
+    content: "GRC Range Navigation";
     display: block;
     margin: 0.35rem 0 0.9rem 0;
     padding: 0.55rem 0.8rem;
