@@ -1,0 +1,370 @@
+{
+  "templates": {
+    "sig_lite": {
+      "name": "SIG Lite",
+      "full_name": "Standardized Information Gathering (SIG) Lite",
+      "description": "A condensed vendor risk questionnaire covering key security domains. Suitable for initial assessments of medium-criticality vendors.",
+      "version": "2024.1",
+      "questions": [
+        {
+          "id": "AM.1",
+          "domain": "Asset Management",
+          "question": "Does the organization maintain a current inventory of all information assets (hardware, software, data)?",
+          "guidance": "Look for CMDB or equivalent asset register updated at least annually.",
+          "weight": 1
+        },
+        {
+          "id": "AM.2",
+          "domain": "Asset Management",
+          "question": "Are assets classified according to sensitivity and criticality?",
+          "guidance": "Asset classification scheme with at least 3 tiers (e.g., Public, Internal, Confidential).",
+          "weight": 1
+        },
+        {
+          "id": "AM.3",
+          "domain": "Asset Management",
+          "question": "Is there a documented data retention and disposal policy with enforced destruction standards?",
+          "guidance": "NIST SP 800-88 or equivalent media sanitization standard.",
+          "weight": 1
+        },
+        {
+          "id": "AC.1",
+          "domain": "Access Control",
+          "question": "Does the organization enforce multi-factor authentication (MFA) for all remote access and privileged accounts?",
+          "guidance": "MFA required for VPN, admin portals, email, and all SaaS tools.",
+          "weight": 2
+        },
+        {
+          "id": "AC.2",
+          "domain": "Access Control",
+          "question": "Are access rights reviewed at least annually and upon role changes?",
+          "guidance": "Evidence: access review reports, terminated user logs.",
+          "weight": 2
+        },
+        {
+          "id": "AC.3",
+          "domain": "Access Control",
+          "question": "Is privileged access managed through a Privileged Access Management (PAM) solution or equivalent controls?",
+          "guidance": "PAM tools (CyberArk, BeyondTrust, etc.) or documented just-in-time access controls.",
+          "weight": 2
+        },
+        {
+          "id": "BC.1",
+          "domain": "Business Continuity",
+          "question": "Does the organization have a documented and tested Business Continuity Plan (BCP)?",
+          "guidance": "BCP tested at least annually; results documented.",
+          "weight": 2
+        },
+        {
+          "id": "BC.2",
+          "domain": "Business Continuity",
+          "question": "Are Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) defined and achievable for all critical services?",
+          "guidance": "SLAs for critical services with evidence of DR test results meeting targets.",
+          "weight": 2
+        },
+        {
+          "id": "CM.1",
+          "domain": "Change Management",
+          "question": "Are all changes to production systems subject to a formal change management process?",
+          "guidance": "Change Advisory Board (CAB) or equivalent approval process with rollback plans.",
+          "weight": 1
+        },
+        {
+          "id": "CM.2",
+          "domain": "Change Management",
+          "question": "Is security testing (SAST/DAST/penetration testing) required before production deployment of new software?",
+          "guidance": "CI/CD pipeline includes security gates; pen test results available.",
+          "weight": 2
+        },
+        {
+          "id": "DS.1",
+          "domain": "Data Security",
+          "question": "Is data encrypted at rest using AES-128 or stronger for all storage containing sensitive information?",
+          "guidance": "Encryption applied to databases, file stores, backup media.",
+          "weight": 2
+        },
+        {
+          "id": "DS.2",
+          "domain": "Data Security",
+          "question": "Is data encrypted in transit using TLS 1.2 or higher for all external communications?",
+          "guidance": "TLS certificates, configuration scans showing no deprecated protocols.",
+          "weight": 2
+        },
+        {
+          "id": "DS.3",
+          "domain": "Data Security",
+          "question": "Is customer/client data logically or physically separated from other tenants?",
+          "guidance": "Data isolation architecture documentation or third-party attestation.",
+          "weight": 2
+        },
+        {
+          "id": "HR.1",
+          "domain": "Human Resources",
+          "question": "Are background checks conducted on employees with access to sensitive systems prior to hire?",
+          "guidance": "Background check policy; third-party screening provider.",
+          "weight": 1
+        },
+        {
+          "id": "HR.2",
+          "domain": "Human Resources",
+          "question": "Is mandatory security awareness training provided at least annually to all staff?",
+          "guidance": "Training completion records; phishing simulation results.",
+          "weight": 1
+        },
+        {
+          "id": "IS.1",
+          "domain": "Incident Management",
+          "question": "Does the organization have a documented Incident Response Plan (IRP) that is tested at least annually?",
+          "guidance": "IRP document, tabletop exercise records from last 12 months.",
+          "weight": 2
+        },
+        {
+          "id": "IS.2",
+          "domain": "Incident Management",
+          "question": "Can the organization notify affected customers of a security breach within 72 hours of detection?",
+          "guidance": "Breach notification SLA in contracts; GDPR/PIPEDA breach notification procedure.",
+          "weight": 2
+        },
+        {
+          "id": "VM.1",
+          "domain": "Vulnerability Management",
+          "question": "Are vulnerability scans performed at least monthly and critical findings remediated within 30 days?",
+          "guidance": "Scan reports; remediation SLA evidence.",
+          "weight": 2
+        },
+        {
+          "id": "VM.2",
+          "domain": "Vulnerability Management",
+          "question": "Does the organization conduct external penetration testing at least annually by a qualified third party?",
+          "guidance": "Pen test report from last 12 months; scope and findings summary.",
+          "weight": 2
+        },
+        {
+          "id": "SA.1",
+          "domain": "Security Assessment",
+          "question": "Does the organization hold a current SOC 2 Type II report, ISO 27001 certificate, or equivalent third-party attestation?",
+          "guidance": "Recent (within 12 months) audit report or certificate.",
+          "weight": 3
+        },
+        {
+          "id": "TH.1",
+          "domain": "Third-Party Risk",
+          "question": "Does the organization conduct security assessments of its own critical suppliers and sub-processors?",
+          "guidance": "Vendor risk management program; sub-processor list.",
+          "weight": 1
+        },
+        {
+          "id": "NW.1",
+          "domain": "Network Security",
+          "question": "Is network segmentation implemented to isolate systems processing sensitive data?",
+          "guidance": "Network architecture diagram showing segmentation; firewall rules.",
+          "weight": 1
+        },
+        {
+          "id": "NW.2",
+          "domain": "Network Security",
+          "question": "Is endpoint detection and response (EDR) deployed on all endpoints and servers?",
+          "guidance": "EDR coverage report; alert triage process.",
+          "weight": 2
+        },
+        {
+          "id": "LG.1",
+          "domain": "Legal & Compliance",
+          "question": "Are data processing agreements (DPAs) in place with all sub-processors handling personal data?",
+          "guidance": "DPA templates; executed agreements with key sub-processors.",
+          "weight": 1
+        },
+        {
+          "id": "LG.2",
+          "domain": "Legal & Compliance",
+          "question": "Does the organization have a documented privacy policy and designated privacy officer or equivalent role?",
+          "guidance": "Published privacy policy URL; DPO appointment documentation.",
+          "weight": 1
+        },
+        {
+          "id": "RM.1",
+          "domain": "Risk Management",
+          "question": "Is a formal risk management program in place with a risk register reviewed at least annually?",
+          "guidance": "Risk register document; evidence of risk treatment decisions.",
+          "weight": 1
+        },
+        {
+          "id": "BK.1",
+          "domain": "Backup & Recovery",
+          "question": "Are backups taken at least daily and tested for recoverability quarterly?",
+          "guidance": "Backup schedule; restore test records.",
+          "weight": 2
+        },
+        {
+          "id": "BK.2",
+          "domain": "Backup & Recovery",
+          "question": "Are backup copies stored offsite or in a geographically separate cloud region?",
+          "guidance": "Offsite/cloud backup configuration; geo-redundancy documentation.",
+          "weight": 1
+        },
+        {
+          "id": "LOG.1",
+          "domain": "Logging & Monitoring",
+          "question": "Are security logs centrally aggregated and retained for a minimum of 12 months?",
+          "guidance": "SIEM configuration; log retention policy.",
+          "weight": 2
+        },
+        {
+          "id": "LOG.2",
+          "domain": "Logging & Monitoring",
+          "question": "Are alerts for security events reviewed and triaged within 24 hours during business hours?",
+          "guidance": "SOC triage SLA; alert response metrics.",
+          "weight": 1
+        }
+      ]
+    },
+    "caiq": {
+      "name": "CAIQ",
+      "full_name": "Consensus Assessments Initiative Questionnaire (CAIQ) — CSA Cloud Control Matrix",
+      "description": "Cloud-specific security questionnaire aligned to the CSA Cloud Control Matrix v4. Suitable for SaaS and IaaS vendor assessments.",
+      "version": "4.0.6",
+      "questions": [
+        {
+          "id": "AIS-01",
+          "domain": "Application & Interface Security",
+          "question": "Does the provider follow a documented secure software development lifecycle (SSDLC) including threat modeling?",
+          "guidance": "OWASP SAMM or equivalent SSDLC documentation.",
+          "weight": 2
+        },
+        {
+          "id": "AIS-02",
+          "domain": "Application & Interface Security",
+          "question": "Are application security tests (SAST, DAST, SCA) integrated into the CI/CD pipeline?",
+          "guidance": "Pipeline configuration evidence; findings trend reports.",
+          "weight": 2
+        },
+        {
+          "id": "BCR-01",
+          "domain": "Business Continuity",
+          "question": "Does the provider have documented, tested, and current business continuity and disaster recovery plans for the cloud service?",
+          "guidance": "BCP/DRP documents with test results from last 12 months.",
+          "weight": 2
+        },
+        {
+          "id": "CCC-01",
+          "domain": "Change Control & Configuration",
+          "question": "Are cloud infrastructure changes managed through automated CI/CD with required approvals and testing gates?",
+          "guidance": "IaC (Terraform/CloudFormation) with version control; approval workflows.",
+          "weight": 2
+        },
+        {
+          "id": "CEK-01",
+          "domain": "Cryptography & Encryption",
+          "question": "Is customer data encrypted at rest using AES-256 and in transit using TLS 1.2+ with customer-managed key options available?",
+          "guidance": "Encryption architecture documentation; key management policy.",
+          "weight": 2
+        },
+        {
+          "id": "DSP-01",
+          "domain": "Data Security & Privacy",
+          "question": "Does the provider maintain a current data flow map showing where customer data is stored, processed, and transferred?",
+          "guidance": "Data flow diagrams; sub-processor list with geo-locations.",
+          "weight": 2
+        },
+        {
+          "id": "DSP-02",
+          "domain": "Data Security & Privacy",
+          "question": "Can customers export or delete all their data on request and within contractually defined timeframes?",
+          "guidance": "Data portability and deletion SLA; documented process.",
+          "weight": 2
+        },
+        {
+          "id": "GRC-01",
+          "domain": "Governance, Risk & Compliance",
+          "question": "Does the provider have a current third-party attestation (SOC 2 Type II, ISO 27001, CSA STAR Level 2, or FedRAMP)?",
+          "guidance": "Report or certificate from last 12 months; scope must cover the offered service.",
+          "weight": 3
+        },
+        {
+          "id": "HRS-01",
+          "domain": "Human Resources",
+          "question": "Are employees with access to customer data subject to background checks and annual security training?",
+          "guidance": "Background check policy; training completion metrics.",
+          "weight": 1
+        },
+        {
+          "id": "IAM-01",
+          "domain": "Identity & Access Management",
+          "question": "Does the provider enforce MFA and role-based access control (RBAC) for all personnel accessing production systems?",
+          "guidance": "IAM configuration; MFA enforcement policy; access reviews.",
+          "weight": 2
+        },
+        {
+          "id": "IAM-02",
+          "domain": "Identity & Access Management",
+          "question": "Does the provider support SAML 2.0 or OIDC SSO integration for enterprise customer authentication?",
+          "guidance": "SSO documentation; supported identity providers list.",
+          "weight": 2
+        },
+        {
+          "id": "IVS-01",
+          "domain": "Infrastructure & Virtualization",
+          "question": "Is network segmentation implemented to isolate customer data and production environments from development/test?",
+          "guidance": "Network architecture diagram; VPC/VLAN segmentation evidence.",
+          "weight": 2
+        },
+        {
+          "id": "IPY-01",
+          "domain": "Interoperability & Portability",
+          "question": "Does the provider offer documented APIs and data export formats ensuring customer data portability without vendor lock-in?",
+          "guidance": "API documentation; supported export formats (CSV, JSON, standard schemas).",
+          "weight": 1
+        },
+        {
+          "id": "IRM-01",
+          "domain": "Incident & Problem Management",
+          "question": "Does the provider have an incident response plan that includes customer notification within 72 hours of a data breach?",
+          "guidance": "IRP document; breach notification SLA in contract.",
+          "weight": 3
+        },
+        {
+          "id": "LOG-01",
+          "domain": "Logging & Monitoring",
+          "question": "Are security events logged and monitored 24/7 with alerts triaged by a security operations function?",
+          "guidance": "SIEM/SOC setup; 24/7 coverage evidence; alert SLA metrics.",
+          "weight": 2
+        },
+        {
+          "id": "SEF-01",
+          "domain": "Security Incident Management",
+          "question": "Is there a published security status page or equivalent communication channel for service disruptions and incidents?",
+          "guidance": "Status page URL; incident communication history.",
+          "weight": 1
+        },
+        {
+          "id": "TVM-01",
+          "domain": "Threat & Vulnerability Management",
+          "question": "Does the provider conduct monthly vulnerability scanning and annual third-party penetration testing of the cloud service?",
+          "guidance": "Scan schedule; pen test executive summary from last 12 months.",
+          "weight": 2
+        },
+        {
+          "id": "STA-01",
+          "domain": "Supply Chain Management",
+          "question": "Does the provider maintain a list of sub-processors/third parties with access to customer data and notify customers of changes?",
+          "guidance": "Sub-processor list; change notification process.",
+          "weight": 2
+        },
+        {
+          "id": "UEM-01",
+          "domain": "Universal Endpoint Management",
+          "question": "Are all endpoints accessing production systems enrolled in MDM with enforced encryption and remote wipe capability?",
+          "guidance": "MDM enrollment report; device compliance policy.",
+          "weight": 1
+        },
+        {
+          "id": "GRM-01",
+          "domain": "Governance & Risk",
+          "question": "Does the provider have a documented information security policy approved by executive leadership, reviewed annually?",
+          "guidance": "Policy document with approval date and next review date.",
+          "weight": 1
+        }
+      ]
+    }
+  }
+}

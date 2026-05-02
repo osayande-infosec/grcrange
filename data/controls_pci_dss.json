@@ -1,0 +1,128 @@
+{
+  "pci_dss": {
+    "framework": "PCI DSS v4.0",
+    "version": "v4.0 (2022)",
+    "requirements": [
+      {
+        "id": "Req-1",
+        "name": "Network Security Controls",
+        "total": 20,
+        "implemented": 17,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-11-01",
+        "description": "Install and maintain network security controls to protect the cardholder data environment."
+      },
+      {
+        "id": "Req-2",
+        "name": "Secure Configurations",
+        "total": 12,
+        "implemented": 10,
+        "partial": 1,
+        "gap": 1,
+        "evidence_date": "2025-10-15",
+        "description": "Apply secure configurations to all system components to protect against known vulnerabilities."
+      },
+      {
+        "id": "Req-3",
+        "name": "Protect Stored Account Data",
+        "total": 18,
+        "implemented": 14,
+        "partial": 3,
+        "gap": 1,
+        "evidence_date": "2025-12-01",
+        "description": "Protect stored account data through encryption, masking, hashing, and data retention policies."
+      },
+      {
+        "id": "Req-4",
+        "name": "Protect Data in Transit",
+        "total": 8,
+        "implemented": 8,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-12-10",
+        "description": "Protect cardholder data with strong cryptography during transmission over open, public networks."
+      },
+      {
+        "id": "Req-5",
+        "name": "Protect Against Malware",
+        "total": 9,
+        "implemented": 8,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-11-20",
+        "description": "Protect all systems against malware and maintain anti-malware software or programs."
+      },
+      {
+        "id": "Req-6",
+        "name": "Secure Systems & Software",
+        "total": 16,
+        "implemented": 12,
+        "partial": 3,
+        "gap": 1,
+        "evidence_date": "2025-10-01",
+        "description": "Develop and maintain secure systems and software through vulnerability management and patching."
+      },
+      {
+        "id": "Req-7",
+        "name": "Restrict Access by Need-to-Know",
+        "total": 8,
+        "implemented": 7,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-11-15",
+        "description": "Restrict access to system components and cardholder data by business need-to-know."
+      },
+      {
+        "id": "Req-8",
+        "name": "Identify Users & Authenticate Access",
+        "total": 18,
+        "implemented": 15,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-12-01",
+        "description": "Identify users and authenticate access to system components using multi-factor authentication."
+      },
+      {
+        "id": "Req-9",
+        "name": "Restrict Physical Access",
+        "total": 12,
+        "implemented": 11,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-09-01",
+        "description": "Restrict physical access to cardholder data and system components in data-sensitive areas."
+      },
+      {
+        "id": "Req-10",
+        "name": "Log & Monitor All Access",
+        "total": 14,
+        "implemented": 11,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-11-01",
+        "description": "Log and monitor all access to system components and cardholder data with audit trails."
+      },
+      {
+        "id": "Req-11",
+        "name": "Test Security Regularly",
+        "total": 14,
+        "implemented": 10,
+        "partial": 3,
+        "gap": 1,
+        "evidence_date": "2025-08-01",
+        "description": "Test security of systems and networks regularly through vulnerability scans and penetration testing."
+      },
+      {
+        "id": "Req-12",
+        "name": "Organizational Policies & Programs",
+        "total": 18,
+        "implemented": 15,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-10-01",
+        "description": "Support information security with organizational policies, programs, and incident response planning."
+      }
+    ]
+  }
+}

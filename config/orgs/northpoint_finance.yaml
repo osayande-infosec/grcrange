@@ -1,0 +1,41 @@
+# ── NorthPoint Financial Corp ──────────────────────────────────
+organization:
+  name: "NorthPoint Financial Corp"
+  short_name: "NorthPointFinance"
+  type: "Financial Services"
+  region: "Toronto, Canada"
+  departments:
+    - "Retail Banking"
+    - "Corporate Finance"
+    - "Risk Management"
+    - "IT & Cybersecurity"
+    - "Compliance & Legal"
+    - "Operations"
+    - "Wealth Management"
+
+branding:
+  app_title: "CyberResilient"
+  app_subtitle: "Financial Sector Resilience Platform"
+  app_icon: "🏦"
+  accent_color: "#4CAF50"
+  card_bg: "#0A1A0F"
+
+compliance:
+  frameworks:
+    nist_csf: true
+    iso_27001: true
+    custom_frameworks:
+      - name: "OSFI"
+        full_name: "Office of the Superintendent of Financial Institutions — B-10 Guidelines"
+        enabled: true
+      - name: "PCI DSS"
+        full_name: "Payment Card Industry Data Security Standard v4.0"
+        enabled: true
+
+security:
+  risk_appetite: "Conservative"
+  mttd_target_hours: 1.0
+  mttr_target_hours: 2.0
+  patch_compliance_target_pct: 99
+  mfa_coverage_target_pct: 100
+  dr_readiness_target_pct: 99

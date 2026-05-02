@@ -1,0 +1,147 @@
+{
+  "cmmc": {
+    "framework": "CMMC 2.0 Level 2 — NIST SP 800-171 Rev 2 (110 Practices)",
+    "domains": [
+      {
+        "id": "AC",
+        "name": "Access Control",
+        "description": "Limit information system access to authorized users, processes, and devices; enforce least privilege",
+        "total": 22,
+        "implemented": 16,
+        "partial": 4,
+        "gap": 2,
+        "evidence_date": "2025-08-01"
+      },
+      {
+        "id": "AT",
+        "name": "Awareness & Training",
+        "description": "Ensure personnel are aware of security risks; provide security literacy training; provide role-based security training",
+        "total": 3,
+        "implemented": 3,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-10-01"
+      },
+      {
+        "id": "AU",
+        "name": "Audit & Accountability",
+        "description": "Create and retain system audit logs; ensure actions can be traced to individual users; review audit logs",
+        "total": 9,
+        "implemented": 7,
+        "partial": 2,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      },
+      {
+        "id": "CM",
+        "name": "Configuration Management",
+        "description": "Establish and maintain baseline configurations; control and monitor user-installed software; apply security configuration settings",
+        "total": 9,
+        "implemented": 6,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-08-15"
+      },
+      {
+        "id": "IA",
+        "name": "Identification & Authentication",
+        "description": "Identify and authenticate organizational users and devices; enforce MFA; manage authenticator strength",
+        "total": 11,
+        "implemented": 9,
+        "partial": 2,
+        "gap": 0,
+        "evidence_date": "2025-10-01"
+      },
+      {
+        "id": "IR",
+        "name": "Incident Response",
+        "description": "Establish incident response capability; track, document and report incidents; test incident response capability",
+        "total": 3,
+        "implemented": 3,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-09-15"
+      },
+      {
+        "id": "MA",
+        "name": "Maintenance",
+        "description": "Perform maintenance on organizational information systems; control maintenance tools; perform remote maintenance securely",
+        "total": 6,
+        "implemented": 4,
+        "partial": 2,
+        "gap": 0,
+        "evidence_date": "2025-07-01"
+      },
+      {
+        "id": "MP",
+        "name": "Media Protection",
+        "description": "Protect system media (paper and digital); limit access to media; sanitize or destroy media before disposal or reuse",
+        "total": 9,
+        "implemented": 7,
+        "partial": 1,
+        "gap": 1,
+        "evidence_date": "2025-07-01"
+      },
+      {
+        "id": "PE",
+        "name": "Physical Protection",
+        "description": "Limit physical access to authorized individuals; protect and monitor the physical facility; escort visitors",
+        "total": 6,
+        "implemented": 5,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-08-01"
+      },
+      {
+        "id": "PS",
+        "name": "Personnel Security",
+        "description": "Screen individuals prior to authorizing access; ensure information is protected during and after employment actions",
+        "total": 2,
+        "implemented": 2,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-10-01"
+      },
+      {
+        "id": "RA",
+        "name": "Risk Assessment",
+        "description": "Periodically assess risk to operations and assets; scan for vulnerabilities; remediate vulnerabilities",
+        "total": 3,
+        "implemented": 2,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      },
+      {
+        "id": "CA",
+        "name": "Security Assessment",
+        "description": "Periodically assess security controls; develop and implement plans of action; monitor security controls",
+        "total": 4,
+        "implemented": 2,
+        "partial": 2,
+        "gap": 0,
+        "evidence_date": "2025-06-01"
+      },
+      {
+        "id": "SC",
+        "name": "System & Comms Protection",
+        "description": "Monitor and control communications at external boundaries; employ architectural designs that promote effective security; separate user functionality from system management functionality",
+        "total": 16,
+        "implemented": 11,
+        "partial": 3,
+        "gap": 2,
+        "evidence_date": "2025-08-01"
+      },
+      {
+        "id": "SI",
+        "name": "System & Information Integrity",
+        "description": "Identify and manage information system flaws; provide protection from malicious code; monitor information systems; perform periodic scans",
+        "total": 7,
+        "implemented": 5,
+        "partial": 2,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      }
+    ]
+  }
+}

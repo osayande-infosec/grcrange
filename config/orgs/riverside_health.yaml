@@ -1,0 +1,41 @@
+# ── Riverside Health System ────────────────────────────────────
+organization:
+  name: "Riverside Health System"
+  short_name: "RiversideHealth"
+  type: "Healthcare"
+  region: "Ontario, Canada"
+  departments:
+    - "Clinical Operations"
+    - "Health Informatics"
+    - "Finance"
+    - "IT & Cybersecurity"
+    - "Patient Experience"
+    - "Research & Innovation"
+    - "Facilities Management"
+
+branding:
+  app_title: "CyberResilient"
+  app_subtitle: "Healthcare Cyber Resilience Platform"
+  app_icon: "🏥"
+  accent_color: "#2196F3"
+  card_bg: "#0F1A2A"
+
+compliance:
+  frameworks:
+    nist_csf: true
+    iso_27001: true
+    custom_frameworks:
+      - name: "PHIPA"
+        full_name: "Personal Health Information Protection Act"
+        enabled: true
+      - name: "HIPAA"
+        full_name: "Health Insurance Portability and Accountability Act"
+        enabled: true
+
+security:
+  risk_appetite: "Conservative"
+  mttd_target_hours: 1.5
+  mttr_target_hours: 4.0
+  patch_compliance_target_pct: 99
+  mfa_coverage_target_pct: 100
+  dr_readiness_target_pct: 95

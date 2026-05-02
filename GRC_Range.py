@@ -20,7 +20,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-from cyberresilient.config import get_config
+from cyberresilient.config import get_config, list_orgs
 from cyberresilient.database import init_db
 from cyberresilient.theme import (
     get_theme_colors, inject_platform_css,
@@ -40,10 +40,11 @@ init_db()
 
 colors = get_theme_colors()
 GOLD = colors["accent"]
+inject_platform_css()
+
+# cfg and profile are loaded AFTER the sidebar sets active_org_key
 cfg = get_config()
 profile = get_industry_profile()
-
-inject_platform_css()
 
 # ── Sidebar ───────────────────────────────────────────────────
 with st.sidebar:
@@ -61,6 +62,25 @@ with st.sidebar:
     tenant_id = st.session_state.get("tenant_id")
     if tenant_id:
         st.success(f"Tenant: {tenant_id}")
+    st.markdown("---")
+
+    # ── Org switcher ──────────────────────────────────────────
+    orgs = list_orgs()
+    if len(orgs) > 1:
+        org_keys = list(orgs.keys())
+        org_labels = list(orgs.values())
+        current_key = st.session_state.get("active_org_key", "default")
+        current_idx = org_keys.index(current_key) if current_key in org_keys else 0
+        selected_idx = st.selectbox(
+            "Organisation",
+            range(len(org_labels)),
+            format_func=lambda i: org_labels[i],
+            index=current_idx,
+        )
+        selected_key = org_keys[selected_idx]
+        if selected_key != current_key:
+            st.session_state["active_org_key"] = selected_key
+            st.rerun()
     st.markdown("---")
 
 # ── Main dashboard ────────────────────────────────────────────

@@ -1,0 +1,41 @@
+# ── Acme Municipal Government ──────────────────────────────────
+organization:
+  name: "Acme Municipal Government"
+  short_name: "AcmeMunicipality"
+  type: "Municipal Government"
+  region: "Ontario, Canada"
+  departments:
+    - "Public Works"
+    - "Public Health"
+    - "Finance"
+    - "IT Services"
+    - "Water & Wastewater"
+    - "Social Services"
+    - "Planning & Development"
+
+branding:
+  app_title: "CyberResilient"
+  app_subtitle: "Cybersecurity Resilience Platform"
+  app_icon: "🛡️"
+  accent_color: "#C9A84C"
+  card_bg: "#1A1A1A"
+
+compliance:
+  frameworks:
+    nist_csf: true
+    iso_27001: true
+    custom_frameworks:
+      - name: "MFIPPA"
+        full_name: "Municipal Freedom of Information and Protection of Privacy Act"
+        enabled: true
+      - name: "PIPEDA"
+        full_name: "Personal Information Protection and Electronic Documents Act"
+        enabled: true
+
+security:
+  risk_appetite: "Moderate"
+  mttd_target_hours: 2.5
+  mttr_target_hours: 8.0
+  patch_compliance_target_pct: 95
+  mfa_coverage_target_pct: 100
+  dr_readiness_target_pct: 90

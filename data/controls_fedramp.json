@@ -1,0 +1,188 @@
+{
+  "fedramp": {
+    "framework": "FedRAMP Moderate Baseline (NIST SP 800-53 Rev 5)",
+    "version": "Rev 5 (2022)",
+    "control_families": [
+      {
+        "id": "AC",
+        "name": "Access Control",
+        "total": 25,
+        "implemented": 20,
+        "partial": 3,
+        "gap": 2,
+        "evidence_date": "2025-11-01",
+        "description": "Policies and procedures controlling system access, account management, and least privilege enforcement."
+      },
+      {
+        "id": "AT",
+        "name": "Awareness & Training",
+        "total": 6,
+        "implemented": 5,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-10-15",
+        "description": "Security awareness and role-based training programs for all personnel."
+      },
+      {
+        "id": "AU",
+        "name": "Audit & Accountability",
+        "total": 16,
+        "implemented": 13,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-12-01",
+        "description": "Event logging, log review, protection of audit information, and audit report generation."
+      },
+      {
+        "id": "CA",
+        "name": "Assessment, Authorization & Monitoring",
+        "total": 9,
+        "implemented": 6,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-09-01",
+        "description": "Security assessments, authorization decisions, continuous monitoring, and plan of action items."
+      },
+      {
+        "id": "CM",
+        "name": "Configuration Management",
+        "total": 12,
+        "implemented": 9,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-11-15",
+        "description": "Baseline configurations, change control, least functionality, and configuration settings enforcement."
+      },
+      {
+        "id": "CP",
+        "name": "Contingency Planning",
+        "total": 13,
+        "implemented": 10,
+        "partial": 2,
+        "gap": 1,
+        "evidence_date": "2025-08-01",
+        "description": "Business continuity, disaster recovery, backup procedures, and reconstitution capabilities."
+      },
+      {
+        "id": "IA",
+        "name": "Identification & Authentication",
+        "total": 12,
+        "implemented": 11,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-12-10",
+        "description": "User identification, multi-factor authentication, authenticator management and password policies."
+      },
+      {
+        "id": "IR",
+        "name": "Incident Response",
+        "total": 10,
+        "implemented": 8,
+        "partial": 1,
+        "gap": 1,
+        "evidence_date": "2025-10-01",
+        "description": "Incident response plan, reporting, handling procedures, and testing."
+      },
+      {
+        "id": "MA",
+        "name": "Maintenance",
+        "total": 6,
+        "implemented": 5,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-11-20",
+        "description": "System maintenance policies, controlled maintenance tools, and remote maintenance controls."
+      },
+      {
+        "id": "MP",
+        "name": "Media Protection",
+        "total": 8,
+        "implemented": 6,
+        "partial": 1,
+        "gap": 1,
+        "evidence_date": "2025-07-01",
+        "description": "Media access, marking, storage, transport, sanitization, and disposal controls."
+      },
+      {
+        "id": "PE",
+        "name": "Physical & Environmental Protection",
+        "total": 20,
+        "implemented": 18,
+        "partial": 1,
+        "gap": 1,
+        "evidence_date": "2025-12-01",
+        "description": "Physical access controls, environmental monitoring, visitor access records, and power equipment."
+      },
+      {
+        "id": "PL",
+        "name": "Planning",
+        "total": 4,
+        "implemented": 4,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-10-01",
+        "description": "Security and privacy plans, rules of behavior, and system security plan maintenance."
+      },
+      {
+        "id": "PS",
+        "name": "Personnel Security",
+        "total": 8,
+        "implemented": 7,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-11-01",
+        "description": "Personnel screening, termination, transfer, access agreements, and third-party personnel security."
+      },
+      {
+        "id": "RA",
+        "name": "Risk Assessment",
+        "total": 10,
+        "implemented": 8,
+        "partial": 1,
+        "gap": 1,
+        "evidence_date": "2025-09-15",
+        "description": "Risk assessments, vulnerability scanning, privacy risk assessments, and criticality analysis."
+      },
+      {
+        "id": "SA",
+        "name": "System & Services Acquisition",
+        "total": 22,
+        "implemented": 16,
+        "partial": 4,
+        "gap": 2,
+        "evidence_date": "2025-08-15",
+        "description": "Secure development lifecycle, supply chain risk management, developer security testing."
+      },
+      {
+        "id": "SC",
+        "name": "System & Communications Protection",
+        "total": 28,
+        "implemented": 22,
+        "partial": 4,
+        "gap": 2,
+        "evidence_date": "2025-11-01",
+        "description": "Boundary protection, cryptographic key management, secure communications, and network segmentation."
+      },
+      {
+        "id": "SI",
+        "name": "System & Information Integrity",
+        "total": 23,
+        "implemented": 18,
+        "partial": 3,
+        "gap": 2,
+        "evidence_date": "2025-12-01",
+        "description": "Malware protection, security alerts, software integrity, spam protection, and error handling."
+      },
+      {
+        "id": "SR",
+        "name": "Supply Chain Risk Management",
+        "total": 12,
+        "implemented": 7,
+        "partial": 3,
+        "gap": 2,
+        "evidence_date": "2025-06-01",
+        "description": "Supply chain risk management plan, provenance, inspection and acceptance of system components."
+      }
+    ]
+  }
+}

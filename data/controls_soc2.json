@@ -1,0 +1,207 @@
+{
+  "soc2": {
+    "framework": "SOC 2 Type II — AICPA Trust Services Criteria 2017",
+    "categories": [
+      {
+        "id": "CC1",
+        "name": "Control Environment",
+        "description": "COSO principle: entity demonstrates commitment to integrity and ethical values, oversight, structure and authority, competence, and accountability",
+        "total": 5,
+        "implemented": 4,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-06-15"
+      },
+      {
+        "id": "CC2",
+        "name": "Communication & Information",
+        "description": "Entity obtains or generates relevant, quality information to support internal control; internally communicates information; communicates with external parties",
+        "total": 3,
+        "implemented": 3,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-06-15"
+      },
+      {
+        "id": "CC3",
+        "name": "Risk Assessment",
+        "description": "Entity specifies objectives, identifies and analyzes risks, assesses fraud risk, and identifies changes that could significantly affect internal control",
+        "total": 4,
+        "implemented": 3,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      },
+      {
+        "id": "CC4",
+        "name": "Monitoring Activities",
+        "description": "Entity selects, develops, and performs ongoing and separate evaluations; evaluates and communicates internal control deficiencies",
+        "total": 2,
+        "implemented": 1,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      },
+      {
+        "id": "CC5",
+        "name": "Control Activities",
+        "description": "Entity selects and develops control activities; selects and develops general controls over technology; deploys controls through policies and procedures",
+        "total": 3,
+        "implemented": 2,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-08-01"
+      },
+      {
+        "id": "CC6",
+        "name": "Logical & Physical Access Controls",
+        "description": "Logical access security software, infrastructure and architectures; registration and authorization of new users; access credentials; access removal; physical access; encryption; transmission",
+        "total": 8,
+        "implemented": 6,
+        "partial": 2,
+        "gap": 0,
+        "evidence_date": "2025-10-01"
+      },
+      {
+        "id": "CC7",
+        "name": "System Operations",
+        "description": "Detection and monitoring of new vulnerabilities, anomalies; evaluation of security events; containment; remediation of identified deficiencies",
+        "total": 5,
+        "implemented": 4,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-10-01"
+      },
+      {
+        "id": "CC8",
+        "name": "Change Management",
+        "description": "Infrastructure, data, software and procedures changes managed with authorization, design, development, configuration, testing, migration and documentation controls",
+        "total": 4,
+        "implemented": 3,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-07-01"
+      },
+      {
+        "id": "CC9",
+        "name": "Risk Mitigation",
+        "description": "Entity identifies, selects, and develops risk mitigation activities including risk transfer (insurance, contracts); business disruption and vendor/business partner risk management",
+        "total": 2,
+        "implemented": 1,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-07-01"
+      },
+      {
+        "id": "A1",
+        "name": "Availability",
+        "description": "System is available for operation and use as committed or agreed; current processing capacity; environmental, software and data backup and recovery",
+        "total": 3,
+        "implemented": 2,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-08-15"
+      },
+      {
+        "id": "C1",
+        "name": "Confidentiality",
+        "description": "Information designated as confidential is protected as committed; identification and maintenance of confidential information; disposal of confidential information",
+        "total": 2,
+        "implemented": 2,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-08-15"
+      },
+      {
+        "id": "PI1",
+        "name": "Processing Integrity",
+        "description": "System processing is complete, valid, accurate, timely and authorized; quality assurance; process monitoring; output reconciliation",
+        "total": 5,
+        "implemented": 3,
+        "partial": 2,
+        "gap": 0,
+        "evidence_date": "2025-05-01"
+      },
+      {
+        "id": "P1",
+        "name": "Privacy — Notice & Communication",
+        "description": "Entity provides notice about the entity's privacy practices; types of personal information collected; purposes and use of collection",
+        "total": 2,
+        "implemented": 2,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      },
+      {
+        "id": "P2",
+        "name": "Privacy — Choice & Consent",
+        "description": "Entity communicates choices available to data subjects; data subjects given opportunity to consent; implicit/explicit consent obtained",
+        "total": 2,
+        "implemented": 1,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      },
+      {
+        "id": "P3",
+        "name": "Privacy — Collection",
+        "description": "Personal information collected consistent with entity's objectives; collection by fair and lawful means; collection for explicit and specified purposes",
+        "total": 2,
+        "implemented": 2,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-09-01"
+      },
+      {
+        "id": "P4",
+        "name": "Privacy — Use, Retention & Disposal",
+        "description": "Personal information used, retained and disposed of consistently with entity's commitments; retention limits; timely disposal of personal information",
+        "total": 3,
+        "implemented": 2,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-06-01"
+      },
+      {
+        "id": "P5",
+        "name": "Privacy — Access",
+        "description": "Entity enables data subjects to access their personal information; processes for requests, completeness, accuracy and currency of information",
+        "total": 2,
+        "implemented": 1,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-06-01"
+      },
+      {
+        "id": "P6",
+        "name": "Privacy — Disclosure & Notification",
+        "description": "Personal information disclosed to third parties only with consent or legal authority; breach notification to affected individuals and regulators",
+        "total": 2,
+        "implemented": 2,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-06-01"
+      },
+      {
+        "id": "P7",
+        "name": "Privacy — Quality",
+        "description": "Personal information accurate, complete and relevant for the purposes for which it is to be used",
+        "total": 1,
+        "implemented": 1,
+        "partial": 0,
+        "gap": 0,
+        "evidence_date": "2025-06-01"
+      },
+      {
+        "id": "P8",
+        "name": "Privacy — Monitoring & Enforcement",
+        "description": "Entity monitors compliance with its privacy commitments; addresses privacy-related inquiries, complaints and disputes; periodic assessments",
+        "total": 1,
+        "implemented": 0,
+        "partial": 1,
+        "gap": 0,
+        "evidence_date": "2025-06-01"
+      }
+    ]
+  }
+}
